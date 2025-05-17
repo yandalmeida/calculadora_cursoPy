@@ -25,6 +25,9 @@ elif(calc == "-"):
 elif(calc == "*"):
     multiplicação(valor,valor2)
 elif(calc == "/"):
-    divisão(valor,valor2)
+    if(valor == 0 or valor2 == 0):
+        print("Não é possível dividir por 0.")
+    else:
+        divisão(valor,valor2)
 else:
     print("Operador inválido.")
